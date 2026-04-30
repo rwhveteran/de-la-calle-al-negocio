@@ -8,55 +8,26 @@ export default function Home() {
 
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <div className="bg-yellow-500 w-10 h-10 rounded-full"></div>
+            <img src="/logo-primary.png" className="w-12 h-12 object-contain" />
             <div>
               <div className="font-bold text-lg">DE LA CALLE</div>
               <div className="text-yellow-500 font-bold">AL NEGOCIO</div>
             </div>
           </div>
 
-          {/* Navigation */}
-          <nav className="hidden md:flex gap-10 text-sm items-center">
-
-            <span className="flex flex-col items-center hover:text-yellow-500 cursor-pointer">
-              🚀
-              <span>Start Here</span>
-            </span>
-
-            <span className="flex flex-col items-center hover:text-yellow-500 cursor-pointer">
-              📄
-              <span>Permits & Legal</span>
-            </span>
-
-            <span className="flex flex-col items-center hover:text-yellow-500 cursor-pointer">
-              🌮
-              <span>Food Business</span>
-            </span>
-
-            <span className="flex flex-col items-center hover:text-yellow-500 cursor-pointer">
-              📍
-              <span>Locations</span>
-            </span>
-
-            <span className="flex flex-col items-center hover:text-yellow-500 cursor-pointer">
-              ⚙️
-              <span>Business Setup</span>
-            </span>
-
-            <span className="flex flex-col items-center hover:text-yellow-500 cursor-pointer">
-              💰
-              <span>Make Money</span>
-            </span>
-
-            <span className="flex flex-col items-center hover:text-yellow-500 cursor-pointer">
-              👥
-              <span>Community</span>
-            </span>
-
+          {/* Menu */}
+          <nav className="hidden md:flex gap-8 text-sm">
+            <span>Start Here</span>
+            <span>Permits & Legal</span>
+            <span>Food Business</span>
+            <span>Locations</span>
+            <span>Business Setup</span>
+            <span>Make Money</span>
+            <span>Community</span>
           </nav>
 
-          {/* Right Side */}
-          <div className="flex gap-4 items-center">
+          {/* Right */}
+          <div className="flex gap-4">
             <button className="border px-3 py-1">ES</button>
             <div className="border px-3 py-1">🔍</div>
           </div>
@@ -64,135 +35,156 @@ export default function Home() {
         </div>
       </header>
 
-      {/* HEADER SPACER */}
-      <div className="h-[90px]" />
-
       {/* ================= HERO ================= */}
-      <section className="relative h-[85vh] flex items-center px-10">
+      <section className="relative h-[90vh] flex items-center px-10">
 
-        {/* Background Image */}
         <div className="absolute inset-0">
-          <img
-            src="/hero.jpg"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent"></div>
+          <img src="/hero.jpg" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-black/70"></div>
         </div>
 
-        {/* Hero Content */}
         <div className="relative z-10 max-w-2xl text-white">
-
-          <h1 className="text-6xl md:text-7xl font-extrabold leading-tight mb-4">
+          <h1 className="text-6xl font-bold mb-4 leading-tight">
             DE LA CALLE <br />
             <span className="text-yellow-500">AL NEGOCIO</span>
           </h1>
 
-          <p className="text-xl md:text-2xl mb-2 font-medium">
+          <p className="text-xl mb-6">
             From the Street to Business
           </p>
 
-          <p className="text-lg text-gray-300 mb-6">
-            Tu sueño comienza aquí. <br />
-            We help you get your first food truck.
-          </p>
-
           <div className="flex gap-4">
-            <button className="bg-yellow-500 text-black px-6 py-3 rounded font-semibold hover:bg-yellow-400 transition">
-              Empieza Tu Negocio
+            <button className="bg-yellow-500 text-black px-6 py-3 font-bold">
+              EMPIEZA TU NEGOCIO
             </button>
 
-            <button className="border border-white px-6 py-3 rounded hover:bg-white hover:text-black transition">
-              Encuentra Ubicaciones
+            <button className="border border-white px-6 py-3">
+              ENCUENTRA UBICACIONES
             </button>
           </div>
-
         </div>
       </section>
 
-      {/* ================= INFO BAR ================= */}
-      <section className="bg-black text-white py-6 px-10">
-        <div className="grid md:grid-cols-4 gap-6 text-center">
+      {/* ================= ICON STRIP ================= */}
+      <section className="bg-black text-white py-6 px-10 grid grid-cols-4 text-center text-sm">
 
-          <div>
-            📘
-            <p className="font-semibold">Educación</p>
-            <p className="text-sm text-gray-400">Guías paso a paso</p>
-          </div>
-
-          <div>
-            🤝
-            <p className="font-semibold">Apoyo</p>
-            <p className="text-sm text-gray-400">Recursos y organizaciones</p>
-          </div>
-
-          <div>
-            📍
-            <p className="font-semibold">Ubicaciones</p>
-            <p className="text-sm text-gray-400">Mejores zonas en LA</p>
-          </div>
-
-          <div>
-            📈
-            <p className="font-semibold">Crecimiento</p>
-            <p className="text-sm text-gray-400">Estrategias reales</p>
-          </div>
-
+        <div>
+          <div className="text-yellow-500 text-xl mb-1">📘</div>
+          Educación
+          <div className="text-gray-400 text-xs">Guías paso a paso</div>
         </div>
+
+        <div>
+          <div className="text-yellow-500 text-xl mb-1">🤝</div>
+          Apoyo
+          <div className="text-gray-400 text-xs">Recursos y organizaciones</div>
+        </div>
+
+        <div>
+          <div className="text-yellow-500 text-xl mb-1">📍</div>
+          Ubicaciones
+          <div className="text-gray-400 text-xs">Mejores zonas en LA</div>
+        </div>
+
+        <div>
+          <div className="text-yellow-500 text-xl mb-1">📈</div>
+          Crecimiento
+          <div className="text-gray-400 text-xs">Estrategias reales</div>
+        </div>
+
       </section>
 
       {/* ================= CHOOSE PATH ================= */}
-      <section className="py-20 px-10 bg-gray-100">
-
-        <h2 className="text-4xl font-bold text-center mb-14">
+      <section className="py-20 px-10 bg-gray-50">
+        <h2 className="text-center text-3xl font-bold mb-12">
           Elige Tu Camino
         </h2>
 
-        <div className="grid md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-4 gap-6">
 
-          <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-            <div className="bg-yellow-400 w-16 h-16 flex items-center justify-center rounded-full mb-4 text-xl">
-              🛒
+          {[
+            {
+              title: "Street Vendor",
+              desc: "Empieza a vender legalmente y crece tu negocio."
+            },
+            {
+              title: "Food Truck",
+              desc: "Lleva tu comida a más lugares y más clientes."
+            },
+            {
+              title: "Home-Based Food",
+              desc: "Inicia tu negocio desde casa de manera legal."
+            },
+            {
+              title: "Kiosk / Retail",
+              desc: "Lleva tu negocio al siguiente nivel con un local."
+            }
+          ].map((item, i) => (
+            <div key={i} className="bg-white p-6 rounded shadow hover:shadow-lg transition">
+              <div className="w-16 h-16 bg-yellow-500 rounded-full mb-4"></div>
+              <h3 className="font-bold mb-2">{item.title}</h3>
+              <p className="text-sm text-gray-600">{item.desc}</p>
             </div>
-            <h3 className="font-bold text-lg">Street Vendor</h3>
-            <p className="text-gray-600 text-sm">
-              Empieza a vender legalmente y crece tu negocio.
-            </p>
-          </div>
-
-          <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-            <div className="bg-yellow-400 w-16 h-16 flex items-center justify-center rounded-full mb-4 text-xl">
-              🚚
-            </div>
-            <h3 className="font-bold text-lg">Food Truck</h3>
-            <p className="text-gray-600 text-sm">
-              Lleva tu comida a más lugares y más clientes.
-            </p>
-          </div>
-
-          <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-            <div className="bg-yellow-400 w-16 h-16 flex items-center justify-center rounded-full mb-4 text-xl">
-              🏠
-            </div>
-            <h3 className="font-bold text-lg">Home-Based Food</h3>
-            <p className="text-gray-600 text-sm">
-              Inicia tu negocio desde casa de manera legal.
-            </p>
-          </div>
-
-          <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-            <div className="bg-yellow-400 w-16 h-16 flex items-center justify-center rounded-full mb-4 text-xl">
-              🏪
-            </div>
-            <h3 className="font-bold text-lg">Kiosk / Retail</h3>
-            <p className="text-gray-600 text-sm">
-              Lleva tu negocio al siguiente nivel.
-            </p>
-          </div>
+          ))}
 
         </div>
-
       </section>
 
+      {/* ================= SYSTEM (YOUR POSTER TURNED SECTION) ================= */}
+      <section className="py-20 px-10">
+
+        <h2 className="text-3xl font-bold text-center mb-12">
+          Cómo Funciona
+        </h2>
+
+        <div className="grid grid-cols-4 gap-8 text-center">
+
+          {[
+            {
+              title: "Planning",
+              desc: "Define tu concepto, menú y estrategia."
+            },
+            {
+              title: "Permits",
+              desc: "Licencias, salud y requisitos legales."
+            },
+            {
+              title: "Locations",
+              desc: "Encuentra zonas de alto tráfico."
+            },
+            {
+              title: "Funding",
+              desc: "Costos, inversión y financiamiento."
+            }
+          ].map((step, i) => (
+            <div key={i}>
+              <div className="bg-yellow-500 text-black font-bold py-2 mb-3">
+                {step.title}
+              </div>
+              <p className="text-sm text-gray-600">{step.desc}</p>
+            </div>
+          ))}
+
+        </div>
+      </section>
+
+      {/* ================= MISSION ================= */}
+      <section className="bg-black text-white text-center py-16 px-10">
+        <h2 className="text-2xl font-bold mb-4">
+          From Survival to Ownership
+        </h2>
+
+        <p className="max-w-xl mx-auto text-gray-400">
+          We help turn real life struggles into real business opportunities.
+          This is not theory. This is the blueprint to build something real.
+        </p>
+      </section>
+
+      {/* ================= FOOTER ================= */}
+      <footer className="bg-gray-100 py-10 text-center text-sm text-gray-500">
+        © 2026 De La Calle Al Negocio — All Rights Reserved
+      </footer>
+
     </main>
-  );
+  )
 }

@@ -18,7 +18,7 @@ export default function PermitsPage() {
         {/* Content */}
         <div className="relative z-10 max-w-2xl text-white">
           <h1 className="text-6xl font-bold mb-4 leading-tight">
-            PERMITS & LEGAL <br />
+            START HERE <br />
             <span className="text-yellow-500">
               PERMISOS Y REQUISITOS
             </span>

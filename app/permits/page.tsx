@@ -20,7 +20,7 @@ export default function PermitsPage() {
           <h1 className="text-6xl font-bold mb-4 leading-tight">
             START HERE <br />
             <span className="text-yellow-500">
-              PERMISOS Y REQUISITOS
+              EMPIEZA AQUÍ
             </span>
           </h1>
 

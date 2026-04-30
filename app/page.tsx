@@ -32,22 +32,44 @@ export default function Home() {
 
   </div>
 </header>
-      {/* HERO SECTION */}
-      <section className="h-[80vh] flex items-center px-10 bg-gray-100">
-        <div>
-          <h1 className="text-5xl font-bold mb-4">
-            De La Calle <span className="text-yellow-500">Al Negocio</span>
-          </h1>
+    {/* HERO SECTION */}
+<section className="relative h-[85vh] flex items-center px-10">
 
-          <p className="text-lg text-gray-600 mb-6">
-            From the Street to Business
-          </p>
+  {/* Background Image */}
+  <div className="absolute inset-0">
+    <img
+      src="/hero.jpg"
+      className="w-full h-full object-cover"
+    />
+    <div className="absolute inset-0 bg-black/60"></div>
+  </div>
 
-          <button className="bg-black text-white px-6 py-3 rounded">
-            Empieza Tu Negocio
-          </button>
-        </div>
-      </section>
+  {/* Content */}
+  <div className="relative z-10 max-w-2xl text-white">
+    <h1 className="text-6xl font-bold mb-4 leading-tight">
+      DE LA CALLE <br />
+      <span className="text-yellow-500">AL NEGOCIO</span>
+    </h1>
+
+    <p className="text-xl mb-4">
+      From the Street to Business
+    </p>
+
+    <p className="text-lg mb-6 text-gray-300">
+      Tu sueño comienza aquí. We help you get your first food truck.
+    </p>
+
+    <div className="flex gap-4">
+      <button className="bg-yellow-500 text-black px-6 py-3 rounded font-semibold">
+        Empieza Tu Negocio
+      </button>
+
+      <button className="border border-white px-6 py-3 rounded">
+        Encuentra Ubicaciones
+      </button>
+    </div>
+  </div>
+</section>
 
       {/* SECTION: CHOOSE PATH */}
       <section className="py-16 px-10">

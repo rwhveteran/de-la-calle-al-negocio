@@ -1,1 +1,45 @@
+export default function StartPage() {
+  return (
+    <main className="bg-white text-black">
 
+      <section className="relative h-[85vh] flex items-center px-10">
+        <div className="absolute inset-0">
+          <img
+            src="/hero.jpg"
+            alt="Food truck"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-black/60"></div>
+        </div>
+
+        <div className="relative z-10 max-w-2xl text-white">
+          <h1 className="text-6xl font-bold mb-4 leading-tight">
+            START HERE <br />
+            <span className="text-yellow-500">
+              EMPIEZA AQUÍ
+            </span>
+          </h1>
+
+          <p className="text-xl mb-4">
+            Build your business the right way.
+          </p>
+
+          <p className="text-gray-300 mb-6">
+            Aprende paso a paso cómo comenzar tu negocio desde cero.
+          </p>
+
+          <div className="flex gap-4">
+            <button className="bg-yellow-500 text-black px-6 py-3 rounded font-semibold">
+              Comenzar
+            </button>
+
+            <button className="border border-white px-6 py-3 rounded">
+              Ver Guía
+            </button>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  )
+}

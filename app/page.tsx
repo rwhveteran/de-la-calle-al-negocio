@@ -26,7 +26,7 @@ function TacoButton() {
         href="/start"
         className="bg-yellow-400 text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition relative z-10"
       >
-        Start Now
+        Empieza Tu Negocio
       </a>
 
       {explode &&
@@ -60,7 +60,7 @@ function TacoButton() {
   );
 }
 
-/* ================= MAIN PAGE ================= */
+/* ================= PAGE ================= */
 export default function Home() {
   return (
     <main className="bg-[#f8f6f1] text-black">
@@ -73,124 +73,111 @@ export default function Home() {
 
           <nav className="hidden md:flex gap-8 text-white text-sm">
 
-            {/* START MENU */}
-            <div className="group relative">
-              <span className="cursor-pointer hover:text-yellow-400">Start Here</span>
-
-              <div className="absolute hidden group-hover:block mt-4 bg-black border border-gray-700 rounded-xl p-6 w-[500px] shadow-xl">
-                <div className="grid grid-cols-2 gap-4">
-
-                  <a href="/start" className="flex gap-3 hover:text-yellow-400">
-                    <FileText />
-                    <div>
-                      <div className="font-semibold">Getting Started</div>
-                      <div className="text-xs text-gray-400">Step-by-step guide</div>
-                    </div>
-                  </a>
-
-                  <a href="/setup" className="flex gap-3 hover:text-yellow-400">
-                    <Settings />
-                    <div>
-                      <div className="font-semibold">Setup</div>
-                      <div className="text-xs text-gray-400">Build your business</div>
-                    </div>
-                  </a>
-
-                </div>
-              </div>
-            </div>
-
-            <a href="/permits" className="flex items-center gap-2 hover:text-yellow-400">
-              <FileText size={16}/> Permits
-            </a>
-
-            <a href="/food" className="flex items-center gap-2 hover:text-yellow-400">
-              <Utensils size={16}/> Food
-            </a>
-
-            <a href="/locations" className="flex items-center gap-2 hover:text-yellow-400">
-              <MapPin size={16}/> Locations
-            </a>
-
-            <a href="/money" className="flex items-center gap-2 hover:text-yellow-400">
-              <DollarSign size={16}/> Money
-            </a>
-
-            <a href="/community" className="flex items-center gap-2 hover:text-yellow-400">
-              <Users size={16}/> Community
-            </a>
+            <a href="/start" className="hover:text-yellow-400">Start Here</a>
+            <a href="/permits" className="hover:text-yellow-400">Permits & Legal</a>
+            <a href="/food" className="hover:text-yellow-400">Food Business</a>
+            <a href="/locations" className="hover:text-yellow-400">Locations</a>
+            <a href="/setup" className="hover:text-yellow-400">Setup</a>
+            <a href="/money" className="hover:text-yellow-400">Make Money</a>
+            <a href="/community" className="hover:text-yellow-400">Community</a>
 
           </nav>
-
         </div>
       </header>
 
       {/* ================= HERO ================= */}
-      {/* ================= HERO ================= */}
-<section className="relative h-[90vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[90vh] flex items-center justify-center overflow-hidden">
 
-  {/* IMAGE */}
-  <img
-    src="/hero.jpg"
-    alt="Food Truck Business"
-    className="absolute inset-0 w-full h-full object-cover"
-  />
+        <img
+          src="/hero.jpg"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
 
-  {/* GRADIENT OVERLAY */}
-  <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/30 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/30 to-transparent" />
 
-  {/* CONTENT */}
-  <div className="relative z-10 max-w-4xl text-center px-6 text-white">
+        <div className="relative z-10 max-w-4xl text-center px-6 text-white">
 
-    <h1 className="text-5xl md:text-6xl font-extrabold leading-tight">
-      DE LA CALLE <br />
-      <span className="text-yellow-400">AL NEGOCIO</span>
-    </h1>
+          <h1 className="text-5xl md:text-6xl font-extrabold leading-tight">
+            DE LA CALLE <br />
+            <span className="text-yellow-400">AL NEGOCIO</span>
+          </h1>
 
-    <p className="mt-4 text-lg">
-      From the Street to Business. Build your food business the right way —
-      legal, structured, and built to grow.
-    </p>
+          <p className="mt-4 text-lg">
+            From the Street to Business. Build your food business the right way —
+            legal, structured, and built to grow.
+          </p>
 
-    <div className="mt-6 flex justify-center gap-4">
+          <div className="mt-6 flex justify-center gap-4">
+            <TacoButton />
 
-      <TacoButton />
+            <a
+              href="/locations"
+              className="border border-white px-6 py-3 rounded-lg hover:bg-white hover:text-black transition"
+            >
+              Encuentra Ubicaciones
+            </a>
+          </div>
 
-      <a
-        href="/locations"
-        className="border border-white px-6 py-3 rounded-lg hover:bg-white hover:text-black transition"
-      >
-        Encuentra Ubicaciones
-      </a>
+        </div>
+      </section>
 
-    </div>
+      {/* ================= SECTION TITLE ================= */}
+      <section className="py-16 text-center">
+        <h2 className="text-3xl font-bold">Elige Tu Camino</h2>
+        <p className="text-gray-500 mt-2">
+          Start where you are. Build step by step.
+        </p>
+      </section>
 
-  </div>
-</section>
-
-      {/* ================= CARDS ================= */}
-      <section className="py-20">
+      {/* ================= PREMIUM CARDS ================= */}
+      <section className="pb-20">
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-6">
 
           {[
-            { title: "Street Vendor", video: "/videos/vendor.mp4" },
-            { title: "Food Truck", video: "/videos/truck.mp4" },
-            { title: "Home-Based", video: "/videos/home.mp4" },
-            { title: "Retail", video: "/videos/store.mp4" }
+            {
+              title: "Street Vendor",
+              desc: "Start selling legally from the street",
+              gradient: "from-green-500 to-yellow-400",
+              video: "/videos/1.mp4"
+            },
+            {
+              title: "Food Truck",
+              desc: "Expand your reach and increase profits",
+              gradient: "from-red-500 to-yellow-400",
+              video: "/videos/2.mp4"
+            },
+            {
+              title: "Home-Based",
+              desc: "Start from your own kitchen",
+              gradient: "from-yellow-500 to-orange-400",
+              video: "/videos/3.mp4"
+            },
+            {
+              title: "Kiosk / Retail",
+              desc: "Build toward a permanent location",
+              gradient: "from-green-600 to-green-400",
+              video: "/videos/4.mp4"
+            }
           ].map((card, i) => (
-            <div key={i} className="group relative rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition">
+            <div
+              key={i}
+              className="group relative rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition"
+            >
 
+              {/* VIDEO HOVER */}
               <video
                 src={card.video}
-                className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition"
+                className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition duration-500"
                 muted
                 loop
                 autoPlay
                 playsInline
               />
 
-              <div className="bg-gradient-to-br from-yellow-200 to-yellow-100 p-6 relative z-10 group-hover:opacity-0 transition">
+              {/* GRADIENT CARD */}
+              <div className={`p-6 h-full bg-gradient-to-br ${card.gradient} text-white relative z-10 group-hover:opacity-0 transition duration-300`}>
                 <h3 className="font-bold text-lg">{card.title}</h3>
+                <p className="text-sm mt-2">{card.desc}</p>
               </div>
 
             </div>

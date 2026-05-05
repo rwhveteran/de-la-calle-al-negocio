@@ -126,39 +126,47 @@ export default function Home() {
       </header>
 
       {/* ================= HERO ================= */}
-      <section className="relative h-[90vh] flex items-center">
+      {/* ================= HERO ================= */}
+<section className="relative h-[90vh] flex items-center justify-center overflow-hidden">
 
-        <img
-          src="/hero.jpg"
-          className="absolute inset-0 w-full h-full object-cover"
-        />
+  {/* IMAGE */}
+  <img
+    src="/hero.jpg"
+    alt="Food Truck Business"
+    className="absolute inset-0 w-full h-full object-cover"
+  />
 
-        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/30 to-transparent" />
+  {/* GRADIENT OVERLAY */}
+  <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/30 to-transparent" />
 
-        <div className="relative z-10 max-w-7xl mx-auto px-6 text-white">
-          <div className="max-w-xl">
+  {/* CONTENT */}
+  <div className="relative z-10 max-w-4xl text-center px-6 text-white">
 
-            <h1 className="text-5xl md:text-6xl font-extrabold">
-              DE LA CALLE <br />
-              <span className="text-yellow-400">AL NEGOCIO</span>
-            </h1>
+    <h1 className="text-5xl md:text-6xl font-extrabold leading-tight">
+      DE LA CALLE <br />
+      <span className="text-yellow-400">AL NEGOCIO</span>
+    </h1>
 
-            <p className="mt-4 text-lg">
-              Build your food business the right way — legal, structured, and profitable.
-            </p>
+    <p className="mt-4 text-lg">
+      From the Street to Business. Build your food business the right way —
+      legal, structured, and built to grow.
+    </p>
 
-            <div className="mt-6 flex gap-4">
-              <TacoButton />
+    <div className="mt-6 flex justify-center gap-4">
 
-              <a href="/locations" className="border border-white px-6 py-3 rounded-lg hover:bg-white hover:text-black transition">
-                Locations
-              </a>
-            </div>
+      <TacoButton />
 
-          </div>
-        </div>
+      <a
+        href="/locations"
+        className="border border-white px-6 py-3 rounded-lg hover:bg-white hover:text-black transition"
+      >
+        Encuentra Ubicaciones
+      </a>
 
-      </section>
+    </div>
+
+  </div>
+</section>
 
       {/* ================= CARDS ================= */}
       <section className="py-20">

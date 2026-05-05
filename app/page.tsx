@@ -7,21 +7,13 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
           {/* LOGO */}
-        <div className="flex items-center gap-4">
+   <img
+  src="/logo.png"
+  alt="De La Calle Al Negocio"
+  className="h-12 object-contain"
+/>
 
-  <img
-    src="/logo.png"
-    alt="De La Calle Al Negocio"
-    className="h-12 w-12 object-contain"
-  />
-
-  <div>
-    <div className="text-white text-sm font-bold tracking-wide">DE LA CALLE</div>
-    <div className="text-yellow-500 font-bold">AL NEGOCIO</div>
-  </div>
-
-</div>
-
+          
           {/* NAV */}
           <nav className="hidden md:flex gap-8 text-sm font-medium text-white">
             <a href="/start" className="hover:text-yellow-500 transition">Start Here</a>

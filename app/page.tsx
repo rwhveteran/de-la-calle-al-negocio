@@ -6,22 +6,16 @@ export default function Home() {
       <header className="fixed top-0 left-0 w-full z-50 bg-black/90 backdrop-blur border-b border-yellow-500/20">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
-          {/* LOGO */}
-          <img
-            src="/logo.png"
-            alt="De La Calle Al Negocio"
-            className="h-12 object-contain"
-          />
+          <img src="/logo.png" alt="Logo" className="h-12 object-contain" />
 
-          {/* NAV */}
           <nav className="hidden md:flex gap-8 text-sm text-white font-medium">
-            <a href="/start" className="hover:text-yellow-400 transition">Start Here</a>
-            <a href="/permits" className="hover:text-yellow-400 transition">Permits & Legal</a>
-            <a href="/food" className="hover:text-yellow-400 transition">Food Business</a>
-            <a href="/locations" className="hover:text-yellow-400 transition">Locations</a>
-            <a href="/setup" className="hover:text-yellow-400 transition">Setup</a>
-            <a href="/money" className="hover:text-yellow-400 transition">Make Money</a>
-            <a href="/community" className="hover:text-yellow-400 transition">Community</a>
+            <a href="/start" className="hover:text-yellow-400">Start Here</a>
+            <a href="/permits" className="hover:text-yellow-400">Permits & Legal</a>
+            <a href="/food" className="hover:text-yellow-400">Food Business</a>
+            <a href="/locations" className="hover:text-yellow-400">Locations</a>
+            <a href="/setup" className="hover:text-yellow-400">Setup</a>
+            <a href="/money" className="hover:text-yellow-400">Make Money</a>
+            <a href="/community" className="hover:text-yellow-400">Community</a>
           </nav>
 
         </div>
@@ -30,17 +24,14 @@ export default function Home() {
       {/* ================= HERO ================= */}
       <section className="relative h-[90vh] flex items-center">
 
-        {/* BACKGROUND IMAGE */}
         <img
           src="/hero.jpg"
           alt="Food Truck Business"
           className="absolute inset-0 w-full h-full object-cover"
         />
 
-        {/* CLEAN GRADIENT OVERLAY */}
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/30 to-transparent" />
 
-        {/* HERO CONTENT */}
         <div className="relative z-10 max-w-7xl mx-auto px-6 text-white">
           <div className="max-w-xl">
 
@@ -68,38 +59,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ================= VALUE BAR ================= */}
-      <section className="bg-black text-white py-6">
-        <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-
-          <div>
-            <div className="text-yellow-400 text-2xl mb-1">📘</div>
-            <div className="font-semibold">Educación</div>
-            <div className="text-sm text-gray-400">Guías paso a paso</div>
-          </div>
-
-          <div>
-            <div className="text-yellow-400 text-2xl mb-1">🤝</div>
-            <div className="font-semibold">Apoyo</div>
-            <div className="text-sm text-gray-400">Recursos reales</div>
-          </div>
-
-          <div>
-            <div className="text-yellow-400 text-2xl mb-1">📍</div>
-            <div className="font-semibold">Ubicaciones</div>
-            <div className="text-sm text-gray-400">Zonas en LA</div>
-          </div>
-
-          <div>
-            <div className="text-yellow-400 text-2xl mb-1">📈</div>
-            <div className="font-semibold">Crecimiento</div>
-            <div className="text-sm text-gray-400">Estrategias reales</div>
-          </div>
-
-        </div>
-      </section>
-
-      {/* ================= PATH SECTION ================= */}
+      {/* ================= CARDS ================= */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-6">
 
@@ -113,88 +73,102 @@ export default function Home() {
 
           <div className="grid md:grid-cols-4 gap-6">
 
-            {/* CARD */}
-            <div className="group bg-white rounded-xl p-6 shadow hover:shadow-2xl hover:-translate-y-2 transition duration-300 border border-gray-100 relative overflow-hidden">
+            {/* CARD 1 */}
+            <div className="group relative rounded-xl overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-2 transition">
 
-              {/* HOVER VIDEO */}
               <video
                 src="/videos/vendor.mp4"
-                className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition"
+                className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition duration-500"
                 muted
                 loop
                 autoPlay
+                playsInline
               />
 
-              <div className="relative z-10">
-                <div className="text-yellow-400 text-4xl mb-3">🌮</div>
+              <div className="bg-gradient-to-br from-green-700 via-green-600 to-yellow-400 p-6 relative z-10 text-white group-hover:opacity-0 transition">
+
                 <h3 className="font-bold text-lg">Street Vendor</h3>
-                <p className="text-sm text-gray-500 mt-2">Start selling legally</p>
+                <p className="text-sm mt-2">
+                  Start selling legally from the street
+                </p>
+
               </div>
 
             </div>
 
-            {/* CARD */}
-            <div className="group bg-white rounded-xl p-6 shadow hover:shadow-2xl hover:-translate-y-2 transition duration-300 border border-gray-100 relative overflow-hidden">
+            {/* CARD 2 */}
+            <div className="group relative rounded-xl overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-2 transition">
 
               <video
                 src="/videos/truck.mp4"
-                className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition"
+                className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition duration-500"
                 muted
                 loop
                 autoPlay
+                playsInline
               />
 
-              <div className="relative z-10">
-                <div className="text-yellow-400 text-4xl mb-3">🚚</div>
+              <div className="bg-gradient-to-br from-red-700 via-red-500 to-yellow-400 p-6 relative z-10 text-white group-hover:opacity-0 transition">
+
                 <h3 className="font-bold text-lg">Food Truck</h3>
-                <p className="text-sm text-gray-500 mt-2">Expand your reach</p>
+                <p className="text-sm mt-2">
+                  Expand your reach and increase profits
+                </p>
+
               </div>
 
             </div>
 
-            {/* CARD */}
-            <div className="group bg-white rounded-xl p-6 shadow hover:shadow-2xl hover:-translate-y-2 transition duration-300 border border-gray-100 relative overflow-hidden">
+            {/* CARD 3 */}
+            <div className="group relative rounded-xl overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-2 transition">
 
               <video
                 src="/videos/home.mp4"
-                className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition"
+                className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition duration-500"
                 muted
                 loop
                 autoPlay
+                playsInline
               />
 
-              <div className="relative z-10">
-                <div className="text-yellow-400 text-4xl mb-3">🏠</div>
+              <div className="bg-gradient-to-br from-yellow-600 via-yellow-500 to-orange-400 p-6 relative z-10 text-white group-hover:opacity-0 transition">
+
                 <h3 className="font-bold text-lg">Home-Based</h3>
-                <p className="text-sm text-gray-500 mt-2">Start from home</p>
+                <p className="text-sm mt-2">
+                  Start from your own kitchen
+                </p>
+
               </div>
 
             </div>
 
-            {/* CARD */}
-            <div className="group bg-white rounded-xl p-6 shadow hover:shadow-2xl hover:-translate-y-2 transition duration-300 border border-gray-100 relative overflow-hidden">
+            {/* CARD 4 */}
+            <div className="group relative rounded-xl overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-2 transition">
 
               <video
                 src="/videos/store.mp4"
-                className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition"
+                className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition duration-500"
                 muted
                 loop
                 autoPlay
+                playsInline
               />
 
-              <div className="relative z-10">
-                <div className="text-yellow-400 text-4xl mb-3">🏪</div>
+              <div className="bg-gradient-to-br from-emerald-700 via-emerald-500 to-lime-400 p-6 relative z-10 text-white group-hover:opacity-0 transition">
+
                 <h3 className="font-bold text-lg">Kiosk / Retail</h3>
-                <p className="text-sm text-gray-500 mt-2">Scale up your business</p>
+                <p className="text-sm mt-2">
+                  Build toward a permanent location
+                </p>
+
               </div>
 
             </div>
 
           </div>
-
         </div>
       </section>
 
     </main>
-  )
+  );
 }

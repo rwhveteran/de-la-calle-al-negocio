@@ -7,10 +7,9 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
           {/* LOGO */}
-   <img
-  src="/logo.png"
-  alt="De La Calle Al Negocio"
-  className="h-12 object-contain"
+<img
+  src="https://images.unsplash.com/photo-1606787366850-de6330128bfc"
+  className="absolute inset-0 w-full h-full object-cover"
 />
 
           

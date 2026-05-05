@@ -2,7 +2,7 @@ export default function Home() {
   return (
     <main className="bg-[#f8f6f1] text-black">
 
-      {/* ================= HEADER ================= */}
+      {/* ================= HEADER ============== */}
       <header className="fixed top-0 left-0 w-full z-50 bg-black/90 backdrop-blur border-b border-yellow-500/20">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 

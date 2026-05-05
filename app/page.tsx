@@ -7,15 +7,20 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
           {/* LOGO */}
-          <div className="flex items-center gap-3">
-            <div className="h-12 w-12 rounded-full border-2 border-yellow-500 flex items-center justify-center">
-              <div className="h-4 w-4 bg-yellow-500 rounded-full"></div>
-            </div>
-            <div>
-              <div className="text-white text-sm font-bold">DE LA CALLE</div>
-              <div className="text-yellow-500 font-bold">AL NEGOCIO</div>
-            </div>
-          </div>
+        <div className="flex items-center gap-4">
+
+  <img
+    src="/logo.png"
+    alt="De La Calle Al Negocio"
+    className="h-12 w-12 object-contain"
+  />
+
+  <div>
+    <div className="text-white text-sm font-bold tracking-wide">DE LA CALLE</div>
+    <div className="text-yellow-500 font-bold">AL NEGOCIO</div>
+  </div>
+
+</div>
 
           {/* NAV */}
           <nav className="hidden md:flex gap-8 text-sm font-medium text-white">

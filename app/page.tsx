@@ -7,34 +7,30 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
           {/* LOGO */}
-          <img src="/logo.png" alt="Logo" className="h-14 object-contain" />
+          <img
+            src="/logo.png"
+            alt="De La Calle Al Negocio"
+            className="h-12 object-contain"
+          />
 
           {/* NAV */}
-          <nav className="hidden md:flex gap-8 text-sm text-white">
-
-            <div className="group relative">
-              <a href="/start" className="hover:text-yellow-400">Start Here</a>
-              <div className="absolute hidden group-hover:block bg-black p-4 mt-2 rounded shadow-lg">
-                <a href="/start" className="block text-sm hover:text-yellow-400">Getting Started</a>
-                <a href="/start" className="block text-sm hover:text-yellow-400">Step-by-Step</a>
-              </div>
-            </div>
-
-            <a href="/permits" className="hover:text-yellow-400">Permits & Legal</a>
-            <a href="/food" className="hover:text-yellow-400">Food Business</a>
-            <a href="/locations" className="hover:text-yellow-400">Locations</a>
-            <a href="/setup" className="hover:text-yellow-400">Setup</a>
-            <a href="/money" className="hover:text-yellow-400">Make Money</a>
-            <a href="/community" className="hover:text-yellow-400">Community</a>
-
+          <nav className="hidden md:flex gap-8 text-sm text-white font-medium">
+            <a href="/start" className="hover:text-yellow-400 transition">Start Here</a>
+            <a href="/permits" className="hover:text-yellow-400 transition">Permits & Legal</a>
+            <a href="/food" className="hover:text-yellow-400 transition">Food Business</a>
+            <a href="/locations" className="hover:text-yellow-400 transition">Locations</a>
+            <a href="/setup" className="hover:text-yellow-400 transition">Setup</a>
+            <a href="/money" className="hover:text-yellow-400 transition">Make Money</a>
+            <a href="/community" className="hover:text-yellow-400 transition">Community</a>
           </nav>
+
         </div>
       </header>
 
       {/* ================= HERO ================= */}
-      <section className="relative h-[85vh] flex items-center">
+      <section className="relative h-[90vh] flex items-center">
 
-        {/* IMAGE */}
+        {/* BACKGROUND IMAGE */}
         <img
           src="/hero.jpg"
           alt="Food Truck Business"
@@ -42,124 +38,160 @@ export default function Home() {
         />
 
         {/* CLEAN GRADIENT OVERLAY */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/20 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/30 to-transparent" />
 
-        {/* CONTENT */}
+        {/* HERO CONTENT */}
         <div className="relative z-10 max-w-7xl mx-auto px-6 text-white">
+          <div className="max-w-xl">
 
-          <h1 className="text-5xl md:text-6xl font-bold leading-tight">
-            DE LA CALLE <br />
-            <span className="text-yellow-400">AL NEGOCIO</span>
-          </h1>
+            <h1 className="text-5xl md:text-6xl font-extrabold leading-tight">
+              DE LA CALLE
+              <br />
+              <span className="text-yellow-400">AL NEGOCIO</span>
+            </h1>
 
-          <p className="mt-4 text-lg max-w-xl text-gray-200">
-            From the Street to Business. Build your food business the right way — legal, structured, and built to grow.
-          </p>
+            <p className="mt-4 text-lg text-gray-200">
+              From the Street to Business. Build your food business the right way — legal, structured, and built to grow.
+            </p>
 
-          <div className="mt-6 flex gap-4">
-            <a href="/start" className="bg-yellow-500 text-black px-6 py-3 rounded font-semibold hover:bg-yellow-400">
-              Empieza Tu Negocio
-            </a>
-            <a href="/locations" className="border border-white px-6 py-3 rounded hover:bg-white hover:text-black">
-              Encuentra Ubicaciones
-            </a>
+            <div className="mt-6 flex gap-4">
+              <a href="/start" className="bg-yellow-400 text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition">
+                Empieza Tu Negocio
+              </a>
+
+              <a href="/locations" className="border border-white px-6 py-3 rounded-lg hover:bg-white hover:text-black transition">
+                Encuentra Ubicaciones
+              </a>
+            </div>
+
           </div>
-
         </div>
       </section>
 
-      {/* ================= FEATURE STRIP ================= */}
+      {/* ================= VALUE BAR ================= */}
       <section className="bg-black text-white py-6">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
 
           <div>
-            <div className="text-yellow-400 text-xl mb-1">📘</div>
-            Educación
+            <div className="text-yellow-400 text-2xl mb-1">📘</div>
+            <div className="font-semibold">Educación</div>
+            <div className="text-sm text-gray-400">Guías paso a paso</div>
           </div>
 
           <div>
-            <div className="text-yellow-400 text-xl mb-1">🤝</div>
-            Apoyo
+            <div className="text-yellow-400 text-2xl mb-1">🤝</div>
+            <div className="font-semibold">Apoyo</div>
+            <div className="text-sm text-gray-400">Recursos reales</div>
           </div>
 
           <div>
-            <div className="text-yellow-400 text-xl mb-1">📍</div>
-            Ubicaciones
+            <div className="text-yellow-400 text-2xl mb-1">📍</div>
+            <div className="font-semibold">Ubicaciones</div>
+            <div className="text-sm text-gray-400">Zonas en LA</div>
           </div>
 
           <div>
-            <div className="text-yellow-400 text-xl mb-1">📈</div>
-            Crecimiento
+            <div className="text-yellow-400 text-2xl mb-1">📈</div>
+            <div className="font-semibold">Crecimiento</div>
+            <div className="text-sm text-gray-400">Estrategias reales</div>
           </div>
 
         </div>
       </section>
 
-      {/* ================= PREMIUM CARDS ================= */}
+      {/* ================= PATH SECTION ================= */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-6">
 
-          <h2 className="text-3xl font-bold text-center mb-12">
+          <h2 className="text-3xl font-bold text-center mb-2">
             Elige Tu Camino
           </h2>
 
-          <div className="grid md:grid-cols-4 gap-8">
+          <p className="text-center text-gray-500 mb-10">
+            Start where you are. Build step by step.
+          </p>
+
+          <div className="grid md:grid-cols-4 gap-6">
 
             {/* CARD */}
-            {[
-              {
-                title: "Street Vendor",
-                desc: "Empieza a vender legalmente",
-                gradient: "from-green-800 to-green-600"
-              },
-              {
-                title: "Food Truck",
-                desc: "Lleva tu comida a más",
-                gradient: "from-red-700 to-yellow-500"
-              },
-              {
-                title: "Home-Based",
-                desc: "Comienza desde casa",
-                gradient: "from-yellow-600 to-orange-500"
-              },
-              {
-                title: "Kiosk / Retail",
-                desc: "Escala a ubicación fija",
-                gradient: "from-emerald-700 to-lime-500"
-              }
-            ].map((card, i) => (
+            <div className="group bg-white rounded-xl p-6 shadow hover:shadow-2xl hover:-translate-y-2 transition duration-300 border border-gray-100 relative overflow-hidden">
 
-              <div
-                key={i}
-                className={`relative rounded-xl overflow-hidden shadow-xl transform hover:-translate-y-3 transition duration-500 bg-gradient-to-br ${card.gradient}`}
-              >
+              {/* HOVER VIDEO */}
+              <video
+                src="/videos/vendor.mp4"
+                className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition"
+                muted
+                loop
+                autoPlay
+              />
 
-                {/* VIDEO HOVER */}
-                <video
-                  className="absolute inset-0 w-full h-full object-cover opacity-0 hover:opacity-100 transition duration-500"
-                  src="/video.mp4"
-                  autoPlay
-                  muted
-                  loop
-                />
-
-                <div className="relative z-10 p-6 text-white bg-black/40 h-full flex flex-col justify-between">
-
-                  <div>
-                    <h3 className="text-xl font-bold mb-2">{card.title}</h3>
-                    <p className="text-sm text-gray-200">{card.desc}</p>
-                  </div>
-
-                  <div className="mt-6 text-right text-yellow-400">
-                    →
-                  </div>
-
-                </div>
+              <div className="relative z-10">
+                <div className="text-yellow-400 text-4xl mb-3">🌮</div>
+                <h3 className="font-bold text-lg">Street Vendor</h3>
+                <p className="text-sm text-gray-500 mt-2">Start selling legally</p>
               </div>
 
-            ))}
+            </div>
+
+            {/* CARD */}
+            <div className="group bg-white rounded-xl p-6 shadow hover:shadow-2xl hover:-translate-y-2 transition duration-300 border border-gray-100 relative overflow-hidden">
+
+              <video
+                src="/videos/truck.mp4"
+                className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition"
+                muted
+                loop
+                autoPlay
+              />
+
+              <div className="relative z-10">
+                <div className="text-yellow-400 text-4xl mb-3">🚚</div>
+                <h3 className="font-bold text-lg">Food Truck</h3>
+                <p className="text-sm text-gray-500 mt-2">Expand your reach</p>
+              </div>
+
+            </div>
+
+            {/* CARD */}
+            <div className="group bg-white rounded-xl p-6 shadow hover:shadow-2xl hover:-translate-y-2 transition duration-300 border border-gray-100 relative overflow-hidden">
+
+              <video
+                src="/videos/home.mp4"
+                className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition"
+                muted
+                loop
+                autoPlay
+              />
+
+              <div className="relative z-10">
+                <div className="text-yellow-400 text-4xl mb-3">🏠</div>
+                <h3 className="font-bold text-lg">Home-Based</h3>
+                <p className="text-sm text-gray-500 mt-2">Start from home</p>
+              </div>
+
+            </div>
+
+            {/* CARD */}
+            <div className="group bg-white rounded-xl p-6 shadow hover:shadow-2xl hover:-translate-y-2 transition duration-300 border border-gray-100 relative overflow-hidden">
+
+              <video
+                src="/videos/store.mp4"
+                className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition"
+                muted
+                loop
+                autoPlay
+              />
+
+              <div className="relative z-10">
+                <div className="text-yellow-400 text-4xl mb-3">🏪</div>
+                <h3 className="font-bold text-lg">Kiosk / Retail</h3>
+                <p className="text-sm text-gray-500 mt-2">Scale up your business</p>
+              </div>
+
+            </div>
 
           </div>
+
         </div>
       </section>
 
